@@ -1,0 +1,42 @@
+MHS - GET
+
+<?php $i = 1; ?>
+<?php foreach ($mahasiswa as $mhs) : ?>
+<tr>
+<th scope="row"><?= $i++; ?></th>
+<td></td>
+<td><?= $mhs['nama_mhs']; ?></td>
+<td><?= $mhs['nim']; ?></td>
+<td><?= $mhs['jurusan']; ?></td>
+<td><?= $mhs['angkatan']; ?></td>
+<td>
+<a href="<?= site_url('mahasiswa/edit/' . $mhs['id_mhs']) ?>" class="btn btn-warning">
+<i class="fas fa-edit"></i>
+</a>
+<a href="<?= site_url('mahasiswa/delete/' . $mhs['id_mhs']) ?>" class="btn btn-danger">
+<i class="fas fa-trash"></i>
+</a>
+</td>
+</tr>
+<?php endforeach; ?>
+
+PMB - GET
+
+<?php $i = 1; ?>
+<?php foreach ($tagihan as $tag) : ?>
+<tr>
+<th scope="row"><?= $i++; ?></th>
+<td><?= $tag['nama_tag']; ?></td>
+<td><?= $tag['kode_tag']; ?></td>
+<td>Rp <?= $tag['nominal']; ?></td>
+<td>
+<a href="<?= site_url('tagihan/edit/' . $tag['id_tag']) ?>" class="btn btn-warning">
+<i class="fas fa-edit"></i>
+</a>
+<a href="<?= site_url('tagihan/delete/' . $tag['id_tag']) ?>" class="btn btn-danger">
+<i class="fas fa-trash"></i>
+</a>
+</td>
+</tr>
+<?php endforeach; ?>
+

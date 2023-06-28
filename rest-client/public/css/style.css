@@ -1,0 +1,25 @@
+.foto {
+     width: 50px;
+}
+
+.icon {
+     width: 35px;
+}
+
+.table>tbody>tr>* {
+     vertical-align: middle;
+}
+
+.gambarBayar {
+     width: 150px;
+}
+
+.vertical-align-middle {
+     vertical-align: middle;
+}
+
+.logo {
+     width: 40px;
+     text-align: center;
+     vertical-align: middle;
+}
